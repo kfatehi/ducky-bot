@@ -30,15 +30,19 @@ module DuckyBot
       # URLCatcher.catch(URI.extract(m.params[1])) unless m.user.nick == bot.nick
     end
     
+    on :message, /^!urls$/ do |m|
+      m.reply "link to my url cache: " # TODO 
+    end
+
     # DuckDuckGo
     on :message, /^!(.+)/ do |m, query|
       m.reply duckduckgo(query)
     end
-    
+
     # DEBUG
     if defined? Pry
       on :message, /^pry/ do |m|
-        m.reply "Pry activated in the terminal within a response thread."
+        m.reply "Pry activated, thread paused. Bot still active."
         binding.pry
       end
     end
