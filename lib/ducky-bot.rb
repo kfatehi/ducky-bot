@@ -11,9 +11,9 @@ module DuckyBot
   bot = Cinch::Bot.new do
     configure do |c|
       c.server = "irc.freenode.net"
-      c.port = 6668
-      c.channels = ["#ducky", "#mindynamics", "#mdx", "#duckydev", "#gatekeeper"]
-      c.nicks = ["ducky", "ducky_doppleganger"]
+      c.port = 6667
+      c.channels = ["#gatekeeper"]
+      c.nicks = ["ducky"]
     end
 
    helpers do
