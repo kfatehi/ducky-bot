@@ -3,3 +3,4 @@ require 'rubygems'
 require 'bundler'
 Bundler.setup
 Bundler.require
+# http://rubylearning.com/blog/how-do-i-create-and-publish-my-first-ruby-gem/
