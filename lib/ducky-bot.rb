@@ -10,9 +10,9 @@ require 'pry'
 module DuckyBot
   bot = Cinch::Bot.new do
     configure do |c|
-      c.server = "irc.mdx.la"
+      c.server = "irc.freenode.net"
       c.port = 6668
-      c.channels = ["#ducky", "#mdx", "#duckydev"]
+      c.channels = ["#ducky", "#mindynamics", "#mdx", "#duckydev", "#gatekeeper"]
       c.nicks = ["ducky", "ducky_doppleganger"]
     end
 

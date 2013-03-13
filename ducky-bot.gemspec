@@ -4,9 +4,9 @@ require File.expand_path('../lib/ducky-bot/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Keyvan"]
   gem.email         = ["keyvan@mdks.org"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{An IRC bot inspired by DuckDuckGo, powered by Ruby & Cinch}
+  gem.summary       = %q{IRC Bot}
+  gem.homepage      = "http://github.com/keyvanfatehi/ducky-bot"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
